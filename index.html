@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <meta charset="UTF-8">
+    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+    <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/base.css">
 </head>
+
 <body>
 
     <!-- Начало: Данный блок удалять нельзя -->
@@ -15,18 +18,448 @@
         </a>
         <div>
             <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+                    href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
             </p>
             <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
+                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a>
+                пользователь получил оплату за верстку этого макета.
             </p>
         </div>
     </div>
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
-    </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" class="logo"><img src="img/icons/logo.svg" alt="logo" class="logo__img"></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link menu__link-dropdown">Products</a>
+                                <ul class="dropdown">
+                                    <li class="dropdown__item"><a class="dropdown-link" href="#product">Information</a>
+                                    </li>
+                                    <li class="dropdown__item"><a class="dropdown-link" href="#accessories">
+                                            Accessories
+                                        </a></li>
+                                    <li class="dropdown__item"><a class="dropdown-link" href="#colors">Colors</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#" class="menu__link">Gallery</a></li>
+                            <li class="menu__item menu__item_pr0"><a href="#" class="menu__link">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__btns">
+                        <button class="login-btn">Log In</button>
+                        <button class="signup-btn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
 
+        <section class="promo">
+            <div class="container">
+                <div class="promo__inner">
+                    <div class="promo__text">
+                        <h1 class="promo__header">
+                            Let's ride
+                            <span>the future.</span>
+                        </h1>
+                        <div class="divider"></div>
+                        <div class="promo__descr">Simple and sleek design with users in mind.</div>
+                        <div class="promo__btns">
+                            <div class="promo__buy">
+                                <a href="#" class="promo__buy-btn">
+                                    <img src="img/icons/promo_buy_btn.svg" alt="buy button">
+                                </a>
+                                <div class="promo__buy-text">Buy now</div>
+                            </div>
+                            <div class="promo__video">
+                                <div class="promo__video-text">Watch our video how it works</div>
+                                <a href="https://youtu.be/7X8II6J-6mU" class="promo__video-btn video-popup"
+                                    data-fancybox>
+                                    <img src="img/icons/promo_play_btn.svg" alt="video play button"
+                                        class="promo__video-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo__bike f-carousel" id="bike-carousel">
+                        <img src="img/promo/main.png" alt="bike image" class="promo__bike-img f-carousel__slide">
+                        <img src="img/promo/main.png" alt="bike image" class="promo__bike-img f-carousel__slide">
+                        <img src="img/promo/main.png" alt="bike image" class="promo__bike-img f-carousel__slide">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="promo-slider">
+            <div class="container">
+                <div class="f-carousel" id="num-carousel">
+                    <div class="promo-slide f-carousel__slide">01</div>
+                    <div class="promo-slide f-carousel__slide">02</div>
+                    <div class="promo-slide f-carousel__slide">03</div>
+                    <div class="carousel-nav f-carousel__nav">
+                        <button class="promo-button prev-slide f-button is-prev">
+                        </button>
+                        <button class="promo-button next-slide f-button is-next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="characteristics">
+            <div class="container">
+                <div class="characteristics__inner">
+                    <div class="characteristics-block">
+                        <div class="characteristics__value"><span>105</span> lbs</div>
+                        <div class="characteristics__descr">Net Weight</div>
+                    </div>
+                    <div class="characteristics-block">
+                        <div class="characteristics__value"><span>26</span> mph</div>
+                        <div class="characteristics__descr">Top Speed</div>
+                    </div>
+                    <div class="characteristics-block">
+                        <div class="characteristics__value"><span>38</span> miles</div>
+                        <div class="characteristics__descr">Max Range</div>
+                    </div>
+                    <div class="characteristics-block">
+                        <div class="characteristics__value"><span>89</span> nm</div>
+                        <div class="characteristics__descr">Max Torques</div>
+                    </div>
+                    <div class="characteristics-block">
+                        <div class="characteristics__value"><span>22%</span> slope</div>
+                        <div class="characteristics__descr">Hill Climbing</div>
+                    </div>
+                    <div class="characteristics-block">
+                        <div class="characteristics__value"><span>2x</span></div>
+                        <div class="characteristics__descr">Hydralic Disc Brakes</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <section class="product" id="product">
+            <div class="container">
+                <h2 class="title">Product Information</h2>
+                <div class="subtitle">Our Scooter has following unique design and technology features:</div>
+                <div class="product__inner">
+                    <div class="product__left">
+                        <img src="img/product/image.jpg" alt="product image" class="product__img">
+                    </div>
+                    <div class="product__right">
+                        <ul class="list">
+                            <li class="list-item">Lightweight aircraft grade aluminium frame</li>
+                            <li class="list-item">Car grade lithium battery</li>
+                            <li class="list-item">Self-balanced</li>
+                            <li class="list-item">Plug n play</li>
+                            <li class="list-item">Quick release adapter</li>
+                            <li class="list-item">RFID key card</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="motor">
+            <div class="container">
+                <h2 class="title">High Efficiency Motor</h2>
+                <div class="subtitle">More torque for powerful riding with 22% maximum hill climbing capability.</div>
+                <img src="img/motor/image.jpg" alt="motor image" class="motor__img">
+            </div>
+
+        </section>
+        <section class="accessories" id="accessories">
+            <div class="container">
+                <h2 class="title">Multiple Accessories</h2>
+                <div class="subtitle">There are multiple modes for the scooter for your multiple needs.</div>
+                <div class="accessories__inner">
+                    <div class="accessories__inner-top">
+                        <div class="accessories-list">
+                            <div class="title title_left">Golf Bag Rock</div>
+                            <ul class="list list_ml67 list_mt44 list_w335">
+                                <li class="list-item">Material : Aluminium alloy</li>
+                                <li class="list-item">Color : Black</li>
+                                <li class="list-item">Capacity : 45lbs</li>
+                                <li class="list-item">Ease : Steady & adjustable</li>
+                            </ul>
+                        </div>
+                        <img src="img/accessories/image.jpg" alt="accessories image" class="accessories__img-golf">
+
+                    </div>
+                    <div class="accessories__inner-bottom">
+                        <img src="img/accessories/bottom_basket.png" alt="basket image" class="accessories__img-basket">
+                        <div class="accessories-list">
+                            <div class="title title_left">Shopping Rack</div>
+                            <ul class="list list_w335 list_mt44 list_pl68">
+                                <li class="list-item">Material : Aluminium alloy</li>
+                                <li class="list-item">Color : Black</li>
+                                <li class="list-item">Capacity : 45lbs</li>
+                                <li class="list-item">Ease : Steady & adjustable</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="button">More Accessories Coming Soon</a>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <h2 class="title">Gallery</h2>
+                <div class="subtitle">View gallery of our products and make yourself satisfied with our creation.</div>
+                <div class="gallery__inner">
+                    <div class="gallery__inner-left">
+                        <img src="img/gallery/scooter.jpg" alt="scooter" class="img-scooter">
+                        <div class="gallery__btns">
+                            <a href="#" class="button button_mt55">Battery Images</a>
+                            <a href="#" class="button button_mt27">Spare Parts Images</a>
+                            <a href="#" class="button button_mt27">Charging Cable Images</a>
+                        </div>
+                    </div>
+                    <div class="gallery__inner-right">
+                        <img src="img/gallery/quality.jpg" alt="high quality" class="img-quality">
+                        <img src="img/gallery/parts.jpg" alt="parts" class="img-parts">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="colors" id="colors">
+            <div class="container">
+                <h2 class="title">Colors</h2>
+                <div class="subtitle">Checkout our products colors.</div>
+                <div class="colors__bg"></div>
+
+                <div class="colors__cards">
+                    <div class="colors__card">
+                        <img src="img/colors/blue.jpg" alt="blue" class="colors__img">
+                        <div class="colors__num">01</div>
+                    </div>
+                    <div class="colors__card">
+                        <img src="img/colors/green.jpg" alt="green" class="colors__img">
+                        <div class="colors__num">02</div>
+                    </div>
+                    <div class="colors__card">
+                        <img src="img/colors/red.jpg" alt="red" class="colors__img">
+                        <div class="colors__num">03</div>
+                    </div>
+                    <div class="colors__card">
+                        <img src="img/colors/black.jpg" alt="black" class="colors__img">
+                        <div class="colors__num">04</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="title">Testimonials</h2>
+                <div class="testimonials__carousel">
+                    <div class="f-carousel" id="testimonialsCarousel">
+                        <div class="testimonials__item f-carousel__slide">
+                            <div class="testimonials__rate">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                            </div>
+                            <p class="testimonials__text">On the other hand, we denounce with righteous indignation and
+                                dislike
+                                men who are so beguiled and demoralized by the charms of pleasure.</p>
+                            <div class="testimonials__user">
+                                <img src="img/testimonials/photo1.png" alt="first photo" class="testimonials__photo">
+                                <div class="testimonials__user-info">
+                                    <div class="testimonials__user-name">Serhiy Hipskyy</div>
+                                    <div class="testimonials__user-profession">CEO Universal</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__item f-carousel__slide">
+                            <div class="testimonials__rate">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                            </div>
+                            <p class="testimonials__text">Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                nihil
+                                impedit quo minus id quod maxime placeat facere possimus.</p>
+                            <div class="testimonials__user">
+                                <img src="img/testimonials/photo2.png" alt="second photo" class="testimonials__photo">
+                                <div class="testimonials__user-info">
+                                    <div class="testimonials__user-name">Justus Menke</div>
+                                    <div class="testimonials__user-profession">CEO Eronaman</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__item f-carousel__slide">
+                            <div class="testimonials__rate">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                            </div>
+                            <p class="testimonials__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                            <div class="testimonials__user">
+                                <img src="img/testimonials/photo3.png" alt="third photo" class="testimonials__photo">
+                                <div class="testimonials__user-info">
+                                    <div class="testimonials__user-name">Britain Eriksen</div>
+                                    <div class="testimonials__user-profession">CEO Universal</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__item f-carousel__slide">
+                            <div class="testimonials__rate">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                            </div>
+                            <p class="testimonials__text">Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                nihil
+                                impedit quo minus id quod maxime placeat facere possimus.</p>
+                            <div class="testimonials__user">
+                                <img src="img/testimonials/photo2.png" alt="fourth photo" class="testimonials__photo">
+                                <div class="testimonials__user-info">
+                                    <div class="testimonials__user-name">Alexander Blok</div>
+                                    <div class="testimonials__user-profession">CEO Altair</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__item f-carousel__slide">
+                            <div class="testimonials__rate">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                            </div>
+                            <p class="testimonials__text">Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                nihil
+                                impedit quo minus id quod maxime placeat facere possimus.</p>
+                            <div class="testimonials__user">
+                                <img src="img/testimonials/photo2.png" alt="fourth photo" class="testimonials__photo">
+                                <div class="testimonials__user-info">
+                                    <div class="testimonials__user-name">Pavel Zakharov</div>
+                                    <div class="testimonials__user-profession">CEO Unagi</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__item f-carousel__slide">
+                            <div class="testimonials__rate">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                                <img src="img/icons/star.svg" alt="star" class="testimonials__star">
+                            </div>
+                            <p class="testimonials__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Soluta
+                                illo
+                                praesentium ullam ab tempora iure vero pariatur distinctio.</p>
+                            <div class="testimonials__user">
+                                <img src="img/testimonials/photo2.png" alt="fourth photo" class="testimonials__photo">
+                                <div class="testimonials__user-info">
+                                    <div class="testimonials__user-name">Alicia Hewllet</div>
+                                    <div class="testimonials__user-profession">CEO AH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container">
+                <h2 class="title">Subscribe To Newsletter</h2>
+                <div class="subtitle">Subscribe to our newsletter to get amazing offers in future.</div>
+                <form action="POST" class="subscribe__form">
+                    <input type="email" class="subscribe__form-input" placeholder="Enter your email.">
+                    <button type="submit" class="subscribe__form-btn">Get start</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__top-left">
+                        <img src="img/footer/image.png" alt="scooter" class="footer-img">
+                    </div>
+                    <div class="footer__top-right">
+                        <div class="footer__about">
+                            <div class="footer__title">About</div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Company</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Teams</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Profile</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__resources">
+                            <div class="footer__title">Resources</div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Contact</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Application</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">FQA Features</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="footer__legals">
+                            <div class="footer__title">Legals</div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Copyright
+                                        Privacy</a>
+                                </li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Policy
+                                        Disclaimer</a>
+                                </li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Terms</a></li>
+                            </ul>
+                            <div class="footer__social">
+                                <a href="#" class="footer__social-link">
+                                    <svg width="9" height="18" viewBox="0 0 9 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.38076 5.0668C8.46318 5.0668 8.52912 5.09976 8.57858 5.1657C8.64452 5.21516 8.67749 5.2811 8.67749 5.36352V7.31699C8.67749 7.39941 8.64452 7.47359 8.57858 7.53953C8.52912 7.58899 8.46318 7.61372 8.38076 7.61372H5.93276C5.85034 7.61372 5.80912 7.65493 5.80912 7.73735V17.4305C5.80912 17.5129 5.77615 17.5871 5.71021 17.653C5.66076 17.7025 5.59482 17.7272 5.5124 17.7272H3.23749C3.15506 17.7272 3.08088 17.7025 3.01494 17.653C2.96549 17.5871 2.94076 17.5129 2.94076 17.4305V7.73735C2.94076 7.65493 2.89955 7.61372 2.81712 7.61372H1.28403C1.20161 7.61372 1.12743 7.58899 1.06149 7.53953C1.01203 7.47359 0.987305 7.39941 0.987305 7.31699V5.36352C0.987305 5.2811 1.01203 5.21516 1.06149 5.1657C1.12743 5.09976 1.20161 5.0668 1.28403 5.0668H2.81712C2.89955 5.0668 2.94076 5.02558 2.94076 4.94316V4.49807C2.94076 3.42655 3.08088 2.6023 3.36112 2.02533C3.64137 1.43187 4.10294 1.01151 4.74585 0.764232C5.38876 0.516959 6.29543 0.401565 7.46585 0.418049H8.3313C8.41373 0.418049 8.47967 0.451019 8.52912 0.516959C8.59506 0.566414 8.62803 0.632353 8.62803 0.714778V2.44569C8.62803 2.52812 8.59506 2.6023 8.52912 2.66824C8.47967 2.7177 8.41373 2.74242 8.3313 2.74242H7.6884C6.97955 2.74242 6.485 2.88254 6.20476 3.16279C5.941 3.44303 5.80912 3.95406 5.80912 4.69588V4.94316C5.80912 5.02558 5.85034 5.0668 5.93276 5.0668H8.38076Z"
+                                            fill="#42454A" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__social-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                        fill="none">
+                                        <path
+                                            d="M17.2693 2.15801C16.6876 2.40006 16.0227 2.56143 15.3579 2.64212C16.0227 2.2387 16.6045 1.59322 16.8538 0.867057C16.1889 1.27048 15.5241 1.51253 14.693 1.6739C14.1113 1.02843 13.1971 0.625 12.2829 0.625C10.4546 0.625 8.95867 2.07733 8.95867 3.85239C8.95867 4.09445 8.95868 4.33649 9.04178 4.57855C6.29927 4.41718 3.80608 3.12623 2.14395 1.18979C1.89463 1.6739 1.72842 2.23869 1.72842 2.80349C1.72842 3.93307 2.31017 4.90129 3.22434 5.46609C2.64259 5.46609 2.14395 5.30472 1.72842 5.06266C1.72842 6.59567 2.89191 7.96731 4.38782 8.20936C4.1385 8.29005 3.80608 8.29005 3.47366 8.29005C3.22434 8.29005 3.05813 8.29005 2.80881 8.20936C3.22434 9.50032 4.47094 10.4685 5.96685 10.4685C4.80336 11.3561 3.39055 11.8402 1.81153 11.8402C1.56221 11.8402 1.31289 11.8402 0.980469 11.7595C2.47638 12.647 4.22161 13.2118 6.13306 13.2118C12.2829 13.2118 15.6072 8.29005 15.6072 4.01376V3.61033C16.272 3.36828 16.8538 2.80348 17.2693 2.15801Z"
+                                            fill="#42454A" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__social-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"
+                                        fill="none">
+                                        <path
+                                            d="M14.7882 0.144775H3.13541C1.81977 0.144775 0.817383 1.14717 0.817383 2.4628V14.1156C0.817383 15.4312 1.81977 16.4336 3.13541 16.4336H14.7882C16.1038 16.4336 17.1062 15.4312 17.1062 14.1156V2.4628C17.1062 1.14717 16.1038 0.144775 14.7882 0.144775ZM8.9618 13.1758C11.6557 13.1758 13.8485 11.0458 13.8485 8.47714C13.8485 8.3056 13.8389 8.12447 13.8197 7.945C13.7778 7.55318 14.0674 7.16151 14.4615 7.16151C14.7803 7.16151 15.0388 7.41998 15.0388 7.73882V13.8023C15.0388 14.1156 14.7882 14.4288 14.4123 14.4288H3.51131C3.19806 14.4288 2.88481 14.1782 2.88481 13.8023V7.71842C2.88481 7.37624 3.1622 7.09886 3.50438 7.09886C3.916 7.09886 4.21154 7.49448 4.16614 7.9036C4.14725 8.07389 4.1378 8.24419 4.1378 8.41449C4.07515 11.0458 6.26788 13.1758 8.9618 13.1758ZM8.9618 11.2964C7.20762 11.2964 5.82933 9.91808 5.82933 8.22655C5.82933 6.53501 7.20762 5.15673 8.9618 5.15673C10.716 5.15673 12.0943 6.53501 12.0943 8.22655C12.0943 9.98073 10.716 11.2964 8.9618 11.2964ZM14.9761 4.59288C14.9761 4.96878 14.6629 5.28202 14.287 5.28202H12.5328C12.1569 5.28202 11.8437 4.96878 11.8437 4.59288V2.90135C11.8437 2.52545 12.1569 2.2122 12.5328 2.2122H14.287C14.6629 2.2122 14.9761 2.52545 14.9761 2.90135V4.59288Z"
+                                            fill="#42454A" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    © Copyright 2021. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/fancyapps_carousel.umd.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
